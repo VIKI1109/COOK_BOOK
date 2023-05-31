@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".activity.RecipeVideoSeletionActivity">
+    <!--    主界面-->
+    <!--    主界面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/root_view_display">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity_display"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_purple"
+            app:title="Video List"
+            app:titleTextColor="#FFF8DC" >
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ListView
+                android:id="@+id/songList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="true"
+                android:scrollbarSize="5dp"
+                android:scrollbarThumbVertical="@drawable/scrollbars"
+                android:scrollbarTrackVertical="@drawable/scrollbar_track"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

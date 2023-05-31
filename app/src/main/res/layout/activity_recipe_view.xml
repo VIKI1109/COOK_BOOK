@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/floral_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ScrollView
+            android:id="@+id/scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="horizontal|vertical"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/floral_white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvRecipeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/ListOfIngredient"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textview_border1"
+                    android:gravity="center_horizontal"
+                    android:text="List of Ingredient"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRecipeListOfIngredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_border2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/Instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/textview_border1"
+                    android:text="Instruction"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tvRecipeInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_border2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+
+
+                 <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:background="@drawable/textview_border1"
+                     android:layout_gravity="center_horizontal"
+                    android:text="The Current Rating"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/tvRecipeRating"
+                    android:background="@drawable/textview_border2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_border1"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Change the Rating"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"/>
+
+
+                 <EditText
+                    android:id="@+id/etRecipeRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:background="@drawable/textview_border2"
+                    android:ems="10"
+                    android:layout_marginTop="5dp"
+                    android:inputType="numberDecimal"
+                    />
+
+
+                <Button
+                    android:id="@+id/playButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/purple_200"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:text="Play Video"
+                    />
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/purple_200"
+                    android:text="Save and Return"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
